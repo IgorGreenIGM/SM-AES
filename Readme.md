@@ -148,7 +148,3 @@ The benchmark results were obtained by measuring AES encryption and decryption f
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE.md) file for details.
-
----
-
-This version should be easier to read, with clear sections and additional instructions for usage.
