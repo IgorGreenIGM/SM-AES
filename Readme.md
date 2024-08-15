@@ -122,6 +122,8 @@ sm-aes.exe [options]
 
 The benchmark results were obtained by measuring AES encryption and decryption for different data sizes.
 
+For futher informations, see [Benchmark.md](Benchmark.md) 
+
 ### Results
 
 | Size    | Operation   | Average Time  | Average Rate |
