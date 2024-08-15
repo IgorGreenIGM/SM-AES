@@ -18,14 +18,21 @@
 - **PKCS5 Padding** for correct block alignment.
 - **ECB Mode Only** support.
 
-## Usage
+## Building
 
-### Clone the Repository
+### Using g++
 
 ```bash
-git clone https://github.com/IgorGreenIGM/SM-AES.git
-cd SM-AES
+g++ src/FastAES.cpp src/main.cpp -o bin/sm-aes.exe -maes -msse4 -m64 -O3 -std=c++11
 ```
+
+### Using Make
+
+```bash
+make
+```
+
+## Usage
 
 ### Command-Line Interface (CLI)
 
@@ -72,6 +79,8 @@ sm-aes.exe [options]
   sm-aes.exe -dec -key mysecretkey123456 -in encrypted.bin -out decrypted.txt
   ```
 
+---
+
 ### C++ Library Integration
 
 `SIMD-MT-AES` can also be used as a C++ library.
@@ -108,20 +117,6 @@ sm-aes.exe [options]
   std::vector<uint8_t> decrypted(length);
   aes.decrypt(ciphertext.data(), decrypted.data(), length);
   ```
-
-## Building
-
-### Using g++
-
-```bash
-g++ src/FastAES.cpp src/main.cpp -o bin/sm-aes.exe -maes -msse4 -m64 -O3 -std=c++11
-```
-
-### Using Make
-
-```bash
-make
-```
 
 ## Benchmark
 
