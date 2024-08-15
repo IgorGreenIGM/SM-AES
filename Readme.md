@@ -20,17 +20,17 @@
 
 ## Building
 
-### Using g++
+- ### Using g++
 
-```bash
-g++ src/FastAES.cpp src/main.cpp -o bin/sm-aes.exe -maes -msse4 -m64 -O3 -std=c++11
-```
+  ```bash
+  g++ src/FastAES.cpp src/main.cpp -o bin/sm-aes.exe -maes -msse4 -m64 -O3 -std=c++11
+  ```
 
-### Using Make
+- ### Using Make
 
-```bash
-make
-```
+  ```bash
+  make
+  ```
 
 ## Usage
 
