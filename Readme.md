@@ -1,6 +1,8 @@
 # SIMD-MT-AES: SIMD Multithreaded AES
 
-`SIMD-MT-AES` is a high-performance AES encryption and decryption utility with support for hardware acceleration and multithreading. It utilizes AES-NI (AES New Instructions) for fast encryption and decryption, along with multithreading to boost performance. It is optimized for speed and supports only AES-128 encryption in ECB mode.
+`SIMD-MT-AES` is a high-performance C++ AES encryption and decryption utility with support for hardware acceleration and multithreading. It utilizes AES-NI (AES New Instructions) for fast encryption and decryption, along with multithreading to boost performance. It is optimized for speed and supports only AES-128 encryption in ECB mode.
+
+A high-performance C++ library implementing AES-128 encryption/decryption using SIMD, AESNI, and multithreading. Optimized for speed and efficiency, this library leverages hardware acceleration and parallel processing to achieve rapid cryptographic operations.
 
 
 ## Features
