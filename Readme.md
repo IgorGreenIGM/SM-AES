@@ -1,4 +1,9 @@
 # SIMD-MT-AES: SIMD Multithreaded AES
+[![Status](https://img.shields.io/badge/status-active-success.svg)]()
+![GitHub License](https://img.shields.io/badge/license-MIT-1006.svg)
+![GitHub Release](https://img.shields.io/github/v/release/IgorGreenIGM/SM-AES)
+![GitHub last commit](https://img.shields.io/github/last-commit/IgorGreenIGM/SM-AES)
+![GitHub top language](https://img.shields.io/github/languages/top/IgorGreenIGM/SM-AES)
 
 `SIMD-MT-AES` is a high-performance C++ AES encryption and decryption utility with support for hardware acceleration and multithreading. It utilizes AES-NI (AES New Instructions) for fast encryption and decryption, along with multithreading to boost performance. It is optimized for speed and supports only AES-128 encryption in ECB mode.
 
