@@ -125,15 +125,18 @@ The benchmark results were obtained by measuring AES encryption and decryption f
 For futher informations, see [Benchmark.md](Benchmark.md) 
 
 ### Results
+|        |            |    MT-AES     |     OPENSSL   |    MT-AES   |   OPENSSL    |
+|---------|-------------|---------------|--------------|--------------|--------------|
+| Size    | Operation   | Average Time  | Average Time | Average Rate | Average Rate |
+| **512 MB** | Encryption  | 0.0946 seconds    | 0.136745 seconds   | 5995.53 MB/s| 4172.45 MB/s |
+|           | Decryption  | 0.1013 seconds    | 0.125878 seconds   | 5608.9 MB/s | 4493.89 MB/s |
+| **1024 MB**| Encryption  | 0.1864 seconds    | 0.244411 seconds   | 6117.79 MB/s| 4620.16 MB/s |
+|           | Decryption  | 0.1902 seconds    | 0.50546 seconds    | 6022.73 MB/s| 3348.57 MB/s |
+| **2048 MB**| Encryption  | 0.362 seconds    | 0.811207 seconds   | 6152.65 MB/s| 3781.4 MB/s |
+|           | Decryption  | 0.609958 seconds  | 0.845851 seconds   | 4474.26 MB/s   | 3479.06 MB/s |
 
-| Size    | Operation   | Average Time  | Average Rate |
-|---------|-------------|---------------|--------------|
-| **512 MB** | Encryption  | 0.0946 seconds | 5995.53 MB/s |
-|         | Decryption  | 0.1013 seconds | 5608.9 MB/s  |
-| **1024 MB** | Encryption  | 0.1864 seconds | 6117.79 MB/s |
-|         | Decryption  | 0.1902 seconds | 6022.73 MB/s |
-| **2048 MB** | Encryption  | 0.3620 seconds | 6152.65 MB/s |
-|         | Decryption  | 0.6100 seconds | 4474.26 MB/s |
+### Interpretation
+It appear that the MT-AES is 2~2.5x faster than OpenSSL+SIMD, same for both encrypt/decrypt operations, same as rates.
 
 ### Benchmark Environment
 
